@@ -927,7 +927,7 @@ footer {
 @media (max-width:480px) {
 
     header{
-        min-height: 450px;
+        min-height: 550px;
 
         background-size: auto 120%;
         background-position: center 90%;
