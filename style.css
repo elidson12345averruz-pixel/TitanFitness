@@ -1,0 +1,1241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+header{
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("img/Ftgym2.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width:100%;
+    min-height:100vh;
+}
+
+/* barra superior */
+
+.boton-menu {
+    display: none;
+}
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 50px;
+    margin-bottom: -20px;
+}
+
+.logo-titulo{
+    display: flex;
+    align-items: center;
+
+    gap: 15px; 
+}
+
+.logo-titulo h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 35px;
+    margin-left: -45px;
+}
+
+
+/* logo */
+
+#logo {
+    width: 160px;
+    height: auto;
+
+    margin-left: -40px;
+}
+
+/* contenido-hero */
+
+.contenido-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.botones-hero{
+    display: flex;
+
+    gap: 15px;
+}
+
+/* h2 */
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    color: white;
+
+    font-weight: 700;
+    font-size: 36px;
+
+    display: inline-block;
+}
+
+.titulo-sec {
+    border-bottom: none;
+}
+
+.titulo-sec::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #E53935;
+    margin-top: 10px;
+}
+
+.contenido-hero h2 {
+    max-width: 700px;
+    text-align: center;
+    
+    margin-top: 30px;
+}
+
+/* h3 */
+
+.contenido-hero h3 {
+    margin-top: -25px;
+}
+
+h3 {
+    margin-bottom: 10px;
+
+    color: #F5F5F5;
+    font-weight: 400;
+    font-size: 24px;
+
+    max-width: 700px;
+}
+
+/* P */
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+
+    color: #D6D6D6;
+    font-weight: 400;
+    font-size: 18px;
+}  
+
+/* body */
+
+body {
+    margin: 0;
+
+    background-color:#111111;
+
+    color: white;
+}
+
+
+/* button */
+
+button {
+    padding: 15px 30px;
+
+    background-color: #E53935;
+
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color .3s,
+        border-color .3s,
+        color .3s;
+}
+
+.botones-hero button:last-child{
+    background-color: transparent;
+
+    border: 2px solid gray;
+
+}
+
+.botones-hero button:last-child:hover{
+    background-color: #C62828;
+    border-color: #C62828;
+    color: white;
+}
+
+button:hover{
+    background-color: #C62828;
+}
+
+
+/* links, nav */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+
+    padding: 8px;
+}
+
+nav a:hover {
+    color: #E53935;
+}
+
+
+nav{
+    display: flex;
+
+    gap: 30px;
+}
+
+
+/* section */
+
+section {
+    padding: 80px 40px;
+}
+
+/* Acerca de nosotros */
+
+
+#ft-nosotros {
+    width: 500px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+
+    flex-shrink: 0;
+}
+
+.contenido-nosotros {
+    display: flex;
+    align-items: center;
+
+    gap: 70px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-nosotros{
+    max-width: 600px;
+    text-align: justify;
+}
+
+.texto-nosotros h3{
+    margin-top: 25px;
+}
+
+#nosotros{
+
+    background-color: #161616;
+
+}
+
+/* Servicios */
+
+.tarjetas-servicio {
+    display: flex;
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.servicio{
+    background-color: #1A1A1A;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    flex: 1;
+
+     border: 1px solid transparent;
+
+    transition:
+        transform .3s,
+        box-shadow .3s,
+        border-color .3s;
+}
+
+.servicio img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 5px;
+}
+
+#servicios > h2{
+    margin-bottom: 35px;
+}
+
+.servicio:hover{
+    transform: translateY(-8px);
+
+    border-color: #E53935;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .4);
+}
+
+/* Planes */
+
+.contenedor-planes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+.plan{
+    background-color: #1A1A1A;
+
+    padding: 35px;
+
+    border-radius: 12px;
+    border: 1px solid #2A2A2A;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.plan h3{
+    font-size: 26px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.precio{
+    color: #E53935;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.precio span{
+    color: #BDBDBD;
+
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.plan button{
+    width: 100%;
+
+    margin-top: auto;
+}
+
+.recomendado{
+    border: 2px solid #E53935;
+
+    transform: scale(1.05);
+}
+
+.popular{
+    color: #E53935;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+
+}
+
+.plan:not(.recomendado){
+    transition:
+        transform .3s,
+        box-shadow .3s;
+}
+
+.plan:not(.recomendado):hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.4);
+}
+
+.plan ul{
+    list-style: none;
+
+    margin-bottom: 30px;
+}
+
+.plan li{
+    margin-bottom: 15px;
+}
+
+#planes li::before{
+    content: "✔";
+    
+    color: #E53935;
+
+    font-weight: 700;
+
+    margin-right: 10px;
+}
+
+/* Horario */
+
+#horarios h2 {
+    margin-bottom: 30px;
+}
+
+.horario-cont {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 600px;
+
+    padding: 5px;
+}
+
+#horarios p {
+    border-bottom: none;
+}
+
+#horarios p::after {
+    content: "";
+
+    display: block;
+
+    width: 300px;
+    height: 1.5px;
+
+    background-color: gray;
+
+    margin-top: 10px;
+}
+
+/* Testimonios */
+
+.contenedor-test {
+    display: flex;
+
+    gap: 35px;
+
+    align-items: stretch;
+
+    margin-top: 15px;
+}
+
+.testimonios {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1A1A1A;
+    
+    border-radius: 12px;
+
+    padding: 20px;
+
+    max-width: 1400px;
+    
+    margin: 0 auto;
+    
+    flex: 1;
+
+    border: 1px solid transparent;
+    transition: 
+        transform .3s,
+        box-shadow .3s;
+}
+
+.contenedor-test h4 {
+    font-weight: 500;
+    font-size: 15px;
+
+    margin-bottom: 7px;
+}
+
+.contenedor-test h3 {
+    margin-bottom: 7px;
+}
+
+.estrellas {
+    color: yellow;
+}
+
+.testimonios:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .4);
+}
+
+.obj {
+    margin-top: auto;
+}
+
+/* Preguntas Frecuentes  */
+
+#preguntas-frecuentes {
+    max-width: 75%;
+}
+
+#preguntas-frecuentes span{
+    color: #E53935;
+    font-size: 30px;
+    cursor: pointer;
+}
+    
+.pregunta h3 {
+    margin-bottom: 10px;
+}
+
+.pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #777;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contacto */
+
+.contenedor-contacto {
+    display: flex;
+    gap: 40px;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1A1A1A;
+
+    border-radius: 12px;
+
+    padding: 20px;
+}
+
+.formulario{
+    background-color: #1A1A1A;
+    
+    border-radius: 12px;
+
+    padding: 20px;
+}
+
+.form-contact input,
+.form-contact textarea{
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+
+    background-color: #151515;
+    color: white;
+
+    border: 1px solid;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    transition: border-color 0.3s;
+}
+
+.form-contact textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus {
+    border-color: #E53935;
+    outline: none;
+}
+
+.info-contacto span{
+    color: white;
+    font-weight: 500;
+}
+
+.info-contacto h3 {
+    margin-bottom: 20px;
+}
+
+.info-contacto h4 {
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.info-contacto p{
+    margin-bottom: 60px;
+}
+
+
+.mas-horarios {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: -35px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+
+    padding: 8px;
+}
+
+.mas-horarios:hover {
+    color: #E53935;
+}
+
+.mas-horarios span {
+    color: #E53935;
+    font-weight: 1000;
+}
+
+/* footer */
+
+footer {
+    padding: 10px
+}
+
+.cont-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+
+    border-bottom: 1px solid #555;
+    padding-bottom: 0;
+
+    margin-bottom: 15px;
+}
+
+.nav-footer{
+    display: flex;
+    align-items: center;
+
+    padding: 10px 50px;
+}
+
+.redes {
+    display: flex;
+
+    padding: 10px 50px;
+
+    gap: 15px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+
+    padding: 8px;
+}
+
+.redes a:hover {
+    color: #E53935;
+}
+
+.personal {
+    margin-top: 30px;
+    color: white;
+    font-weight: 400;
+}
+
+.personal span {
+    font-weight: 600;
+}
+
+.correo-prs {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+
+    padding: 8px;
+}
+
+.contacto-personal p {
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.correo-prs:hover {
+    color: #E53935;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px){
+
+}
+
+
+/* Movil */
+
+@media (max-width: 768px){
+
+    header{
+        background-size: auto 140%;
+        background-position: center 70%;
+    }
+
+    footer {
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    } 
+
+    nav{
+        display: none;
+    }
+
+    .boton-menu{
+        display: block;
+    }
+
+    .barra-superior{
+        padding: 15px 20px;
+        margin-bottom: 0;
+    }
+
+    #logo{
+        width: 100px;
+        margin-left: 0;
+    }
+
+    .logo-titulo h1{
+        font-size: 20px;
+        line-height: 1.15;
+        margin-left: 0;
+    }
+
+    h2{
+        font-size: 28px;
+        line-height: 1.15;
+
+        margin-left: 0;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .contenido-hero h2{
+        font-size: 28px;
+        margin-left: 0;
+
+        max-width: 70%;
+
+        line-height: 1.3;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .texto-nosotros h3{
+        font-size: 18px;
+        line-height: 1.15;
+
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .contenido-hero{
+        padding-top: 10px;
+    }
+
+    .contenido-hero h3{
+        font-size: 18px;
+        line-height: 1.15;
+        margin-left: 0;
+    }
+
+    .contenido-hero button{
+        padding: 15px 30px;
+
+        font-size: 15px;
+    }
+
+    .contenido-nosotros {
+        display: block;
+        gap: 20px;
+    }
+
+    #ft-nosotros{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .tarjetas-servicio{
+        flex-wrap: wrap;
+    }
+
+    .servicio{
+        flex: 1 1 calc(50% - 15px);
+    }
+
+    .contenedor-planes{
+        grid-template-columns: repeat(1, 3fr);
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .recomendado{
+        transform: none;
+    }
+
+    .horario-cont{
+        max-width: 80%;
+        flex-wrap: wrap;
+
+        margin: 0 auto;
+    }
+
+    .dias{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .contenedor-test{
+        flex-direction: column;
+
+        max-width: 500px;
+
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    #preguntas-frecuentes {
+        max-width: 90%;
+    }
+
+    .pregunta h3{
+        font-size: 22px;
+    }
+
+    #contacto{
+        padding-bottom: 30px;
+    }
+
+    .contenedor-contacto{
+        flex-direction: column;
+        max-width: 350px;
+
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .info-contacto p{
+        margin-bottom: 20px;
+    }
+
+    .info-contacto h3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .info-contacto .p-antes{
+        margin-bottom: 1px;
+    }
+
+    .mas-horarios{
+        margin-top: 1px;
+    }
+
+    .formulario h3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .cont-footer{
+        flex-direction: column;
+
+        padding: 15px 50px;
+    }
+
+    .personal{
+        max-width: 600px;
+    }
+}
+
+/* Telefono */
+
+@media (max-width:480px) {
+
+    header{
+        min-height: 450px;
+
+        background-size: auto 120%;
+        background-position: center 90%;
+    }
+
+    section{
+        padding: 15px 20px;
+
+        max-width: 100%;
+    }
+
+    .boton-menu{
+        font-size: 15px;
+        padding: 15px 25px;
+    }
+
+    .barra-superior{
+        padding: 10px 15px;
+        margin-bottom: 0;
+    }
+
+    #logo{
+        width: 80px;
+        margin-left: 0;
+    }
+
+    .logo-titulo h1{
+        font-size: 22px;
+        line-height: 1.15;
+        margin-left: 0;
+    }
+
+    h2{
+        font-size: 18px;
+        line-height: 1.15;
+
+        margin-left: 0;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .contenido-hero{
+        padding-top: 20px;
+    }
+
+    .contenido-hero h2{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-left: 0;
+        margin-bottom: 20px;
+
+        max-width: 70%;
+    }
+
+    .texto-nosotros h3{
+        font-size: 14px;
+        line-height: 1.15;
+
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .contenido-hero h3{
+        font-size: 13px;
+        line-height: 1.15;
+        margin-left: 0;
+    }
+
+    .contenido-hero button{
+        padding: 17px 25px;
+
+        font-size: 10px;
+    }
+
+    .contenido-nosotros {
+        gap: 14px;
+    }
+
+    #ft-nosotros{
+        margin: 0 auto;
+    }
+    
+    .servicio{
+        flex-basis: 1 1 100%;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .contenedor-planes{
+        grid-template-columns: 1fr;
+        
+        width: 70%;
+    }
+
+    .contenedor-planes h3{
+        font-size: 20px;
+    }
+
+    .contenedor-planes li{
+        font-size: 12px;
+    }
+    
+    .contenedor-planes ul{
+        margin-bottom: 10px;
+    }
+
+    .precio{
+        font-size: 27px;
+    }
+
+    .precio span{
+        font-size: 12px;
+    }
+
+    .popular{
+        margin-bottom: 15px;
+    }
+
+    .horario-cont{
+        flex-direction: column;
+        width: fit-content;
+
+        margin: 0 auto;
+    }
+
+    #horarios h2{
+        margin-bottom: 15px;
+    }
+
+    #horarios p::after {
+        width: 150px;
+        
+        margin-top: 4px;
+    }
+
+    .horario-cont p{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    #horarios .dias{
+        font-size: 14px;
+        font-weight: 500;
+
+        margin-bottom: 5px;
+    }
+
+    #horarios .dias::after{
+        display: none;
+    }
+
+    .contenedor-test{
+        max-width: 85%;
+
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+    .estrellas{
+        margin-bottom: 5px;
+    }
+
+    #preguntas-frecuentes {
+        max-width: 100%;
+    }
+
+    #preguntas-frecuentes p {
+        font-size: 12px;
+
+        margin-bottom: 10px;
+
+        max-width: 85%;
+    }
+
+    .pregunta{
+        max-width: 90%;
+
+        margin-bottom: 5px;
+        padding-bottom: 2px;
+    }
+
+    .pregunta h3{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .pregunta span{
+        margin-left: 15px;
+    }
+
+    .contenedor-contacto{
+        max-width: 65%;
+
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .info-contacto a{
+        font-size: 10px;
+    }
+
+    .info-contacto p{
+        margin-bottom: 15px;
+    }
+
+    .info-contacto h3{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .info-contacto h4{
+        font-size: 10px;
+    }
+
+    .info-contacto .p-antes{
+        margin-bottom: 1px;
+    }
+
+    .mas-horarios{
+        margin-top: 1px;
+    }
+
+    #contacto{
+        padding-bottom: 5px;
+    }
+
+    .formulario h3{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .formulario label{
+        font-size: 13px;
+    }
+
+    .formulario input{
+        font-size: 11px;
+    }
+
+    .formulario textarea{
+        font-size: 11px;
+    }
+
+    .formulario button{
+        font-size: 14px;
+    }
+
+    .cont-footer{
+        display: flex;
+
+        padding: 5px;
+
+        width: 100%;
+    }
+
+    .nav-footer a{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .nav-footer{
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .redes{
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .redes a{
+        font-size: 10px;
+
+        padding: 5px;
+    }
+
+    .personal{
+        max-width: 75%;
+        margin-top: 15px;
+    }
+
+    .contacto-personal{
+        font-size: 10px;
+
+        max-width: 300px;
+    }
+
+    .contacto-personal p{
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .contacto-personal a{
+        font-size: 12px;
+    }
+
+    .copyright{
+        margin-bottom: 5px;
+    }
+
+    footer{
+        padding: 15px;
+        padding-top: 0;
+    }
+}
+    
